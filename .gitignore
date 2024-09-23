@@ -1,0 +1,17 @@
+env*
+__pycache__/
+*.py[cod]
+*.pyo
+.mypy_cache/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+*.lock
+.env
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db

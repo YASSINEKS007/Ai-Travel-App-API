@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "final-test-ai-travel-app"
+version = "0.1.0"
+description = ""
+authors = ["YASSINEKS007 <yassinekh007007@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+crewai = "^0.61.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

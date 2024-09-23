@@ -1,0 +1,31 @@
+```json
+   {
+      "activities": [
+         {
+            "name": "Champagne Exclusive flight in helicopter",
+            "description": "Departing from the Heliport of Paris, board a twin-engine helicopter for a large view of Paris, the Eiffel Tower, the Seine, the Grande Biblioth&egrave;que and the Bercy district. Discover Champagne and its vines. Fly over the grandest houses from Veuve Clicquot to Deutz to Mumm and many more.",
+            "pictures": "https://www.helipass.com/uploads/media/default/0001/01/5845424dd86b3-champagne-8-jpg"
+         },
+         {
+            "name": "BMX lesson at Jules Noël, Paris 14th",
+            "description": "The Paris BMX Club is a BMX school based in Paris that offers courses all year round at the Jules Noel skatepark in the 14th arrondissement, all supervised by passionate and qualified instructors. Your BMX teacher will teach you the basics of this urban sport with a theoretical part and practical training.",
+            "pictures": "https://media.manawa.com/cache/activity_gallery_zoom_770x500/media/2017/12/0309f3052e3d7d7f3280aa3e250ea178.jpeg"
+         },
+         {
+            "name": "Hot Air Balloon ride over the Loire Valley",
+            "description": "Discover the magnificent landscapes of the Loire valley with a hot air balloon flight! Departing from Amboise, enjoy breathtaking views of this UNESCO World Heritage site as you float gently through the sky.",
+            "pictures": "https://cdn-images.tripadvisor.com/hotairballoon_photos/d10/k8/6a/f2/ef/hot-air-balloon-ride-over-loire-valley-amboise-france.jpg"
+         },
+         {
+            "name": "Parisian Rooftops Tour",
+            "description": "Discover the beauty of Paris from a unique perspective: its rooftops! This guided tour takes you to some of the city's most iconic buildings, where you can enjoy stunning views of Paris. See famous landmarks such as the Eiffel Tower, Notre-Dame and Sacré-Cœur from above, and learn about the history and architecture of these amazing buildings.",
+            "pictures": "https://cdn.skyscanner.net/ws-euwe-prd-images109/images/725x483/hotels/paris/67348745/Paris-RoofTops-Hotel-GrandPrix-04_032116.jpg"
+         },
+         {
+            "name": "Montgolfière de Lyon",
+            "description": "Experience a hot air balloon flight over the beautiful city of Lyon! Departing from Villeurbanne, you'll soar above the Saône river and enjoy stunning views of the city's historic sites. Your pilot will share fascinating stories about the region's history and culture as you float gently through the sky.",
+            "pictures": "https://cdn.skyscanner.com/ws-euwe-prd-images109/hotels/lyon/725x483/montgolfiere-de-lyon-01_280617.jpg"
+         }
+      ]
+   }
+   ```

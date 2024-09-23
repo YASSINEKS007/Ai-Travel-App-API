@@ -1,0 +1,21 @@
+```json
+{
+  "restaurants": [
+    {
+      "name": "Casa Festa",
+      "address": "Rue Jean-Jacques Rousseau, 75001 Paris, France",
+      "website": "https://casafesta.fr/"
+    },
+    {
+      "name": "Clown-Bar",
+      "address": "Rue Amelot, 75011 Paris, France",
+      "website": "https://www.clown-bar-paris.fr/"
+    },
+    {
+      "name": "Au Chien qui Fume",
+      "address": "33 Rue du Pont Neuf, 75001 Paris, France",
+      "website": "https://www.auchienquifume.com/"
+    }
+  ]
+}
+```
