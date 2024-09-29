@@ -1,38 +1,57 @@
 from crewai import Crew, Process
 from final_test_ai_travel_app.agents import AiRestaurantsAgents
-from final_test_ai_travel_app.tasks import AiRestaurnatsTasks
+from final_test_ai_travel_app.tasks import AiRestaurantsTasks
+import json
 
-llm = "ollama/mistral"
-
-
-agents = AiRestaurantsAgents(llm=llm)
-tasks = AiRestaurnatsTasks()
-
-restaurants_criteria_agent = agents.restaurants_criteria_agent()
-extract_restaurants_criteria_task = tasks.extract_restaurants_criteria_task(
-    criteria="I love fast flights, and I love fast food",
-    agent=restaurants_criteria_agent,
-)
+# llm = "ollama/mistral"
 
 
-restaurants_agent = agents.restaurants_agent()
-restaurants_task = tasks.restaurants_task(city="PARIS", agent=restaurants_agent)
+# agents = AiRestaurantsAgents(llm=llm)
+# tasks = AiRestaurnatsTasks()
+
+# restaurants_criteria_agent = agents.restaurants_criteria_agent()
+# extract_restaurants_criteria_task = tasks.extract_restaurants_criteria_task(
+#     criteria="I love fast flights, and I love fast food",
+#     agent=restaurants_criteria_agent,
+# )
 
 
-restaurants_json = agents.restaurants_json()
-save_restaurants_json = tasks.save_restaurants_json(agent=restaurants_json)
+# restaurants_agent = agents.restaurants_agent()
+# restaurants_task = tasks.restaurants_task(
+#     city="TOKYO", agent=restaurants_agent)
 
 
-crew = Crew(
-    agents=[restaurants_criteria_agent, restaurants_agent, restaurants_json],
-    tasks=[extract_restaurants_criteria_task, restaurants_task, save_restaurants_json],
-    process=Process.sequential,
-)
+# crew = Crew(
+#     agents=[restaurants_criteria_agent, restaurants_agent],
+#     tasks=[extract_restaurants_criteria_task, restaurants_task],
+#     process=Process.sequential,
+# )
 
-result = crew.kickoff()
+# crew_output = crew.kickoff()
 
-print("*************** start *************")
-res = str(result)
-print(res)
-print(type(res))
-print("*************** end   *************")
+# print("*********    start    ********")
+# print(crew_output)
+# print("*********    end      **********")
+
+
+def restaurants_crew(llm: str, criteria: str, destination_city: str) -> Crew:
+    agents = AiRestaurantsAgents(llm=llm)
+    tasks = AiRestaurantsTasks()
+
+    restaurants_criteria_agent = agents.restaurants_criteria_agent()
+    extract_restaurants_criteria_task = tasks.extract_restaurants_criteria_task(
+        criteria=criteria,
+        agent=restaurants_criteria_agent,
+    )
+
+    restaurants_agent = agents.restaurants_agent()
+    restaurants_task = tasks.restaurants_task(
+        city=destination_city, agent=restaurants_agent)
+
+    crew = Crew(
+        agents=[restaurants_criteria_agent, restaurants_agent],
+        tasks=[extract_restaurants_criteria_task, restaurants_task],
+        process=Process.sequential,
+    )
+
+    return crew

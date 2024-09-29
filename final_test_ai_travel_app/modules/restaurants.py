@@ -27,8 +27,6 @@ def get_restaurants_by_city(city: str):
 
         restaurants = []
         for restaurant in features:
-            pprint(restaurant)
-
             properties = restaurant.get("properties", {})
             data = {
                 "name": properties.get("name", "Not Available"),

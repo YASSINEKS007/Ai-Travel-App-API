@@ -1,13 +1,8 @@
 {
-        "flight": [
-            {
-                "oneWay": false,
-                "departure": "2024-09-24T11:10:00",
-                "arrival": "2024-09-24T17:40:00",
-                "price": {
-                    "currency": "EUR",
-                    "total": "229.73"
-                }
-            }
-        ]
+        "flight": {
+            "oneWay": "No",
+            "departure": "2024-09-28T10:50:00",
+            "arrival": "2024-09-28T16:30:00",
+            "price": { "currency": "EUR", "total": "238.02" }
+        }
     }

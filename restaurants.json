@@ -1,21 +1,22 @@
-```json
 {
   "restaurants": [
     {
-      "name": "Casa Festa",
-      "address": "Rue Jean-Jacques Rousseau, 75001 Paris, France",
-      "website": "https://casafesta.fr/"
+      "name": "L'Escargot",
+      "address": "L'Escargot, 48 Greek Street, London, W1D 4EF, United Kingdom",
+      "website": "https://www.lescargot.co.uk/",
+      "phone": "+44 20 7439 7474"
     },
     {
-      "name": "Clown-Bar",
-      "address": "Rue Amelot, 75011 Paris, France",
-      "website": "https://www.clown-bar-paris.fr/"
+      "name": "Crocker's Folly",
+      "address": "Crocker's Folly, 24 Aberdeen Place, London, NW8 8JR, United Kingdom",
+      "website": "https://www.crockersfolly.com/",
+      "phone": "+44 20 7289 9898"
     },
     {
-      "name": "Au Chien qui Fume",
-      "address": "33 Rue du Pont Neuf, 75001 Paris, France",
-      "website": "https://www.auchienquifume.com/"
+      "name": "Galvin at Windows",
+      "address": "Galvin at Windows, 22 Park Lane, London, W1K 1BE, United Kingdom",
+      "website": "https://www.galvinatwindows.com/",
+      "phone": "+44 20 7208 4021"
     }
   ]
 }
-```
